@@ -1,6 +1,5 @@
-﻿using System;
+﻿using BusinessRuleEngine;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using BusinessRuleEngine;
 
 namespace BusinessRuleEngineTests.Test
 {
