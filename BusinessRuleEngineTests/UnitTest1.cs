@@ -30,5 +30,31 @@ namespace BusinessRuleEngineTests.Test
             var result = royalty.Royalty(false);
             Assert.IsFalse(result);
         }
+
+        [TestMethod]
+        public void SendEmail_ReturnsTrue()
+        {
+            string toEmailID = "bishalbishal7@gmail.com";
+            string subject = "Subject Line";
+            string mailBody = "";
+
+            Email email = new Email();
+            var result = email.SendEmail(toEmailID, subject, mailBody);
+
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void SendEmail_ReturnsFalse()
+        {
+            string toEmailID = "bishalbishal7@gmail.com;bishal.bishal7@gmail.com";
+            string subject = "Subject Line";
+            string mailBody = "";
+
+            Email email = new Email();
+            var result = email.SendEmail(toEmailID, subject, mailBody);
+
+            Assert.IsFalse(result);
+        }
     }
 }
