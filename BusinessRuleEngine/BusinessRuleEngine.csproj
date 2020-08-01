@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Book.cs" />
+    <Compile Include="Membership.cs" />
     <Compile Include="PhysicalProduct.cs" />
     <Compile Include="ProductDetails.cs" />
     <Compile Include="Program.cs" />
