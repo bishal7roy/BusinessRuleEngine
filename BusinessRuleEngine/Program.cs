@@ -35,6 +35,8 @@ namespace BusinessRuleEngine
                 }
                 else if (inputValue == 5)       //This will be called when payment is done for Video (Learning to Ski)
                     new Video("Video (Learning to Ski)");
+                else if (inputValue == 9)       //To exit out of loop and Console Application
+                    Environment.Exit(0);
                 else
                 {
                     Console.WriteLine("Wrong Input...");
